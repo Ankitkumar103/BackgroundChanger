@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        img {
+            width: 60%;
+            margin: auto;
+        }
+
+        p {
+            width: 75%;
+            margin: auto;
+            margin-top: 40px;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #white {
+            background-color: white;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #blueviolet {
+            background-color: blueviolet;
+        }
+
+        #gray {
+            background-color: #808080;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-switcher">
+        <button class="btn" id="white" onclick="changeBg('#ffffff')"></button>
+        <button class="btn" id="black" onclick="changeBg('#000000')"></button>
+        <button class="btn" id="blueviolet" onclick="changeBg('#8a2be2')"></button>
+        <button class="btn" id="gray" onclick="changeBg('#808080')"></button>
+    </div>
+    <h1 class="text">Background Changer</h1>
+    <img src="608887.jpg" alt="">
+    <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore ea harum quasi, quod aliquam fugit. Natus
+        optio,
+        assumenda dolor hic veritatis iure suscipit illum animi numquam quasi est nesciunt porro? Delectus quisquam quos
+        laborum veritatis ipsum quam temporibus, a unde dignissimos ullam debitis quasi fugit vero nulla impedit
+        possimus. Ad enim ex deserunt earum, omnis totam pariatur vel dolorum animi mollitia! Explicabo impedit natus
+        molestiae animi quod enim aliquid architecto odit cumque, voluptatum, culpa repellat mollitia soluta, sapiente
+        facere omnis nesciunt? Error ducimus distinctio repudiandae quae repellat accusamus provident dolores maiores
+        expedita laudantium explicabo voluptatibus voluptas ea, earum alias natus mollitia cupiditate harum asperiores
+        molestiae perferendis ullam incidunt porro unde. Dolores quam pariatur vel officia quidem voluptates quos quis,
+        a fugit perferendis corporis fuga saepe provident labore est eveniet, nulla itaque dolor quod. Mollitia nam qui
+        nisi at, commodi nulla nihil eos ducimus eius tempora ipsam soluta deleniti distinctio! Et, at? Aspernatur
+        facilis voluptatum tempore error maxime eum quo? Sunt totam unde fugiat aspernatur neque reprehenderit libero
+        sint repellat officiis, ipsam sapiente deleniti est ab veniam placeat dignissimos recusandae? Nobis recusandae
+        velit ducimus beatae, sapiente dolorum vel praesentium iusto ipsam natus esse quibusdam magni minus qui illum
+        nostrum, aspernatur dolor maxime? Asperiores eveniet velit earum repellat eaque! Ratione illo voluptate quaerat,
+        natus voluptates eos itaque quasi accusamus ad nam. Ex, nesciunt doloribus. Dolore aperiam recusandae sunt rem
+        voluptatibus dignissimos placeat corrupti! Rem quasi magnam accusamus eaque magni quia numquam aliquam voluptate
+        quod blanditiis, labore reprehenderit quo quos harum perferendis placeat eos assumenda recusandae suscipit non
+        est architecto! Et numquam autem excepturi laboriosam quos quibusdam voluptas deserunt dolor asperiores
+        laudantium cupiditate porro id sunt commodi, ipsum aspernatur voluptatibus veniam dicta nemo assumenda adipisci
+        repudiandae libero deleniti necessitatibus. Vero aspernatur reprehenderit repellat modi, in laudantium nostrum
+        voluptas est illo minus sunt omnis?
+    </p>
+
+
+    <script>
+        function changeBg(color) {
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if (color == "#ffffff") {
+                for (let elm of txt) {
+                    elm.style.color = "black";
+                }
+            }
+            else {
+                for (let elm of txt) {
+                    elm.style.color = "white";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
